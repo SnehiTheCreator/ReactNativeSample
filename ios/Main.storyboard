@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jcV-Ih-I6r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Controller-->
+        <scene sceneID="Q98-BS-53h">
+            <objects>
+                <viewController storyboardIdentifier="SplashController" modalPresentationStyle="overFullScreen" id="jcV-Ih-I6r" customClass="SplashController" customModule="MidtownAlliance" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G8o-yS-rCX"/>
+                        <viewControllerLayoutGuide type="bottom" id="kRG-0O-Lqe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BAy-sH-gJd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ma-loader0000" translatesAutoresizingMaskIntoConstraints="NO" id="vfn-1C-jXx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vfn-1C-jXx" secondAttribute="trailing" id="8VC-Ty-w8W"/>
+                            <constraint firstAttribute="bottom" secondItem="vfn-1C-jXx" secondAttribute="bottom" id="Djb-bR-efr"/>
+                            <constraint firstItem="vfn-1C-jXx" firstAttribute="top" secondItem="BAy-sH-gJd" secondAttribute="top" id="Vmb-Za-sA1"/>
+                            <constraint firstItem="vfn-1C-jXx" firstAttribute="leading" secondItem="BAy-sH-gJd" secondAttribute="leading" id="hmS-Ac-XE8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="vfn-1C-jXx" id="jBp-UQ-NLG"/>
+                        <segue destination="Xxz-mF-nhM" kind="show" identifier="next" id="Mlz-s9-v5p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCe-01-ibo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="26"/>
+        </scene>
+        <!--React Controller-->
+        <scene sceneID="4Lm-7P-KMr">
+            <objects>
+                <viewController storyboardIdentifier="reactController" id="Xxz-mF-nhM" customClass="ReactController" customModule="MidtownAlliance" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vcb-FC-imV"/>
+                        <viewControllerLayoutGuide type="bottom" id="fpr-Yc-Mrq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jVa-IU-71q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JtO-Rq-SsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961" y="26"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ma-loader0000" width="414" height="736"/>
+    </resources>
+</document>

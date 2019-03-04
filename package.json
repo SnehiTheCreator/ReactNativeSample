@@ -1,0 +1,52 @@
+{
+  "name": "MidtownAlliance",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "build:ios": "react-native bundle --entry-file='index.ios.js' --bundle-output='./ios/MidtownAlliance/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios'"
+  },
+  "dependencies": {
+    "auth2": "0.0.0",
+    "axios": "^0.18.0",
+    "firebase": "^4.10.1",
+    "prop-types": "^15.6.0",
+    "react": "16.5.1",
+    "react-native": "0.57.2",
+    "react-native-autocomplete-input": "^1.1.2",
+    "react-native-checkbox": "^1.0.15",
+    "react-native-communications": "^2.1.3",
+    "react-native-custom-actionsheet": "0.0.4",
+    "react-native-google-analytics-bridge": "^5.6.1",
+    "react-native-htmlview": "^0.12.1",
+    "react-native-map-clustering": "^1.3.0",
+    "react-native-maps": "^0.22.1",
+    "react-native-maps-super-cluster": "^1.4.0",
+    "react-native-material-design-searchbar": "^1.8.0",
+    "react-native-modalbox": "^1.4.2",
+    "react-native-permissions": "^1.1.1",
+    "react-native-router-flux": "4.0.0-beta.27",
+    "react-native-splash-screen": "^3.0.6",
+    "react-native-vector-icons": "^4.5.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
+  },
+  "jest": {
+    "preset": "jest-react-native"
+  },
+  "devDependencies": {
+    "babel-jest": "16.0.0",
+    "babel-preset-react-native": "1.9.0",
+    "jest": "16.0.2",
+    "jest-react-native": "16.1.0",
+    "metro-react-native-babel-preset": "^0.50.0",
+    "react-test-renderer": "15.3.2"
+  }
+}
